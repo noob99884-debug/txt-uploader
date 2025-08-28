@@ -1726,7 +1726,7 @@ def notify_owner():
         "chat_id": OWNER,
         "text": "𝐁𝐨𝐭 𝐑𝐞𝐬𝐭𝐚𝐫𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ✅"
     }
-    requests.post(url, data=data)
+    requests.post(url, data=data, timeout=60)
 
 
 def reset_and_set_commands():
